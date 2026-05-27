@@ -42,4 +42,3 @@ Coloque aqui o link do protótipo:
 * Tons de roxo e dourado
 * Estilo neon/cartoon
 
-```
