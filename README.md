@@ -22,9 +22,12 @@ Escolha cartas estrategicamente para vencer o adversário.
 ---
 
 # 🔗 Protótipo
-Coloque aqui o link do protótipo:
-
 [https://linkdoprototipo.com](https://www.figma.com/proto/uWpGdOXMljYR2sHTallbkG/Jogo?node-id=2001-102&p=f&t=agShOeBVGl1oK40k-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2001%3A102)
+
+---
+# 🔗 Site
+
+https://gabriellypiffer.github.io/Jogo_Jokenpo/
 
 ---
 
