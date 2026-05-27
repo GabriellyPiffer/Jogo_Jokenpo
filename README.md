@@ -39,6 +39,6 @@ Coloque aqui o link do protótipo:
 # 🎨 Tema visual
 
 * Fantasia mística
-* Tons de roxo e dourado
+* Tons de roxo, dourado e azul escuro
 * Estilo neon/cartoon
 
