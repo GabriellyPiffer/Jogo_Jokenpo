@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Joquempô - Card Battle Arena</title>
+</head>
+<body>
+
+    <div class="logo-fixa-esquerda">
+        <img src="./images/logo.png" alt="Joquempô Emblem">
+    </div>
+
+    <header class="introducao">
+        <div class="paineis-placar">
+            <div class="placar-box player-score">
+                <h2 class="score-label">Pontos</h2>
+                <p class="pontuacao" id="ponto-player">00</p>
+            </div>
+            
+            <div class="deck-casa">
+                <div class="carta-verso"><img src="./images/logo.png" alt="Verso"></div>
+                <div class="carta-verso"><img src="./images/logo.png" alt="Verso"></div>
+                <div class="carta-verso"><img src="./images/logo.png" alt="Verso"></div>
+                <div class="carta-verso"><img src="./images/logo.png" alt="Verso"></div>
+                <div class="carta-verso"><img src="./images/logo.png" alt="Verso"></div>
+            </div>
+
+            <div class="placar-box house-score">
+                <h2 class="score-label">Pontos</h2>
+                <p class="pontuacao" id="ponto-house">00</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="jogo">
+        <div class="deck-jogador">
+            
+            <div class="carta-item" data-card="pedra" onclick="jogar('pedra')">
+                <div class="carta-corpo pedra-card">
+                    <div class="carta-arte"><img src="./images/pedra.png" alt="Pedra"></div>
+                </div>
+            </div>
+
+            <div class="carta-item" data-card="papel" onclick="jogar('papel')">
+                <div class="carta-corpo papel-card">
+                    <div class="carta-arte"><img src="./images/papel.png" alt="Papel"></div>
+                </div>
+            </div>
+
+            <div class="carta-item" data-card="tesoura" onclick="jogar('tesoura')">
+                <div class="carta-corpo tesoura-card">
+                    <div class="carta-arte"><img src="./images/tesoura.png" alt="Tesoura"></div>
+                </div>
+            </div>
+
+            <div class="carta-item" data-card="spock" onclick="jogar('spock')">
+                <div class="carta-corpo spock-card">
+                    <div class="carta-arte"><img src="./images/spook.png" alt="Spock"></div>
+                </div>
+            </div>
+
+            <div class="carta-item" data-card="lagarto" onclick="jogar('lagarto')">
+                <div class="carta-corpo lagarto-card">
+                    <div class="carta-arte"><img src="./images/lagarta.png" alt="Lagarto"></div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div class="gameplay">
+        <div class="player display">
+            <h2 class="persona">Você Escolheu</h2>
+            <div id="arena-player" class="slot-arena"></div>
+        </div>
+
+        <div class="fim">
+            <p class="result">BATALHANDO...</p>
+            <button class="playAgain" onclick="reset()">Jogar Novamente</button>
+        </div>
+
+        <div class="house display">
+            <h2 class="persona">O Computador Escolheu</h2>
+            <div id="arena-house" class="slot-arena"></div>
+        </div>
+    </div>
+
+    <div id="regra" class="regras">
+        <div class="regras-titulo">
+            <h1>Regras do Tabuleiro</h1>
+            <button onclick="fecharegras()">Fechar</button>
+        </div>
+        <img src="./images/regras.png" alt="Tabela de Regras">
+    </div>
+
+    <button class="regras-button" onclick="mostraregras()">Regras</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
